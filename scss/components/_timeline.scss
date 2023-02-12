@@ -1,0 +1,179 @@
+/*************** timeline ***************/
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* timeline - start */
+.timeline {
+    $timeline-color: v.$black;
+    $timeline-color-dark: v.$white;
+
+    .clearfix {
+      &:after,
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+      }
+    }
+
+    line-height: 1.5em;
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 3rem auto;
+    position: relative;
+    @include m.prefix(transition, all 0.4s ease);
+
+    &,
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    &:before {
+      content: "";
+      width: 0.3rem;
+      height: 100%;
+      background: $timeline-color;
+      left: 50%;
+      top: 0;
+      position: absolute;
+      body.dark & {
+        /* dark mode */
+        box-shadow: v.$box-shadow-dark-mode;
+      }
+    }
+
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+      width: 100%;
+    }
+
+    .timeline-item {
+      margin-bottom: 5rem;
+      position: relative;
+      @extend .clearfix;
+
+      .timeline-icon {
+        // flex - ini - icons
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // flex - end - icons
+        background: $timeline-color;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        overflow: hidden;
+        margin-left: -2.3rem;
+        z-index: 2;
+        @include m.prefix(border-radius, 50%);
+        body.dark & {
+          /* dark mode */
+          box-shadow: v.$box-shadow-light-mode;
+        }
+
+        img {
+          position: relative;
+          transform: translate(50%, 50%);
+        }
+        span {
+          color: v.$white;
+        }
+      }
+
+      .timeline-content {
+        width: 45%;
+        background: #fff;
+        padding: 2rem;
+        position: relative;
+        @include m.prefix(box-shadow, v.$box-shadow-light-mode);
+        @include m.prefix(border-radius, 0.5rem);
+        @include m.prefix(transition, all 0.3s ease);
+
+        h2 {
+          padding: 1.5rem;
+          background: $timeline-color;
+          color: #fff;
+          margin: -2rem -2rem 0 -2rem;
+          font-weight: 500;
+          @include m.prefix(border-radius, 0.3rem 0.3rem 0 0);
+          @include m.desktop{
+            font-size: 2.4rem;
+          }
+        }
+
+        h3, h4 {
+          @include m.desktop{
+            font-size: 1.8rem;
+          }
+        }
+
+        p, h3, h4 {
+          body.dark & {
+            /* dark mode */
+            color: v.$black;
+          }
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 2rem;
+          right: -0.5rem;
+          width: 1.4rem;
+          height: 1.4rem;
+          background-color: $timeline-color;
+          display: block;
+          border-radius: 0.3rem;
+          transform: rotate(45deg);
+          body.dark & {
+            /* dark mode */
+            box-shadow: v.$box-shadow-light-mode;
+          }
+        }
+
+        &.right {
+          float: right;
+
+          &:before {
+            left: -0.5rem;
+            right: inherit;
+          }
+        }
+      }
+    }
+
+    @include m.mobileFirst {
+      margin: 3rem;
+      padding: 0;
+      &:before {
+        left: 0;
+      }
+
+      .timeline-item {
+        .timeline-content {
+          width: 90%;
+          float: right;
+
+          &:before,
+          &.right:before {
+            left: -0.5rem;
+            right: inherit;
+          }
+        }
+
+        .timeline-icon {
+          left: 0;
+        }
+      }
+    }
+  } /* timeline - end */

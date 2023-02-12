@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "bio": {
+    "aboutMe": "Ingeniero Estadístico e Informático con más de 12 años de experiencia en el desarrollo de software, creando y aportando soluciones para grandes empresas, buscando siempre la excelencia y el trabajo en equipo. Actualmente estoy dedicado al desarrollo web (JavaScript, React, Next.js, Node.js), mayormente front-end."
+  },
+  "cv": {
+    "resume": "Nacido el 05/05/1984, en Lima, Perú. Peruano residente en Guayaquil.",
+    "experience": {
+      "title": "Experiencia laboral y educación",
+      "experience05": {
+        "company": "Quantify 360 Solutions",
+        "role": "Fullstack Web Developer",
+        "city": "Guayaquil, Ecuador (en remoto)",
+        "years": "2022",
+        "description": "Rediseño del sitio de Quantify 360 Solutions."
+      },
+      "experience04": {
+        "company": "Ayesa Perú",
+        "role": "Consultor",
+        "city": "Lima, Perú (presencial)",
+        "years": "2018 - 2021",
+        "description": "Análisis, desarrollo y soporte backend (C, Oracle PL/SQL, Linux). Destacado: optimización de procesos para área técnica de Enel Perú (2019)."
+      },
+      "experience03": {
+        "company": "IQ Corporation SAC (ahora IQProsoft)",
+        "role": "Analista de Sistemas",
+        "city": "Lima, Perú (presencial)",
+        "years": "2015 - 2018",
+        "description": "Desarrollo para POS (Ingenico C/C++, Android). Implementaciones de remesas y seguridad en Interbank Agente y adquisición de seguros para GCS (República Dominicana)."
+      },
+      "experience02": {
+        "company": "Novatronic SAC",
+        "role": "Programador",
+        "city": "Lima, Perú (presencial)",
+        "years": "2012 - 2015",
+        "description": "Desarrollo de sistemas EFT (C, Oracle PL/SQL). Destacado: Banca Móvil BBVA-Telefónica (2013)."
+      },
+      "experience01": {
+        "company": "ICQ Creative SAC",
+        "role": "Asistente de Ingeniería",
+        "city": "Lima, Perú (presencial)",
+        "years": "2010 - 2012",
+        "description": "Videojuegos (Visual C++) en casinoval.com: 101 Lions, Wild Cleopatra, etc."
+      }
+    },
+    "education": {
+      "education03": {
+        "school": "Universidad Nacional Agraria La Molina",
+        "achievement": "Título profesional",
+        "city": "Lima, Perú",
+        "years": "2017",
+        "description": "Ingeniero Estadístico e Informático."
+      },
+      "education02": {
+        "school": "Universidad Nacional Agraria La Molina",
+        "achievement": "Posgrado",
+        "city": "Lima, Perú",
+        "years": "2016 - 2017",
+        "description": "Especialización en Marketing y Finanzas."
+      },
+      "education01": {
+        "school": "Universidad Nacional Agraria La Molina",
+        "achievement": "Grado académico",
+        "city": "Lima, Perú",
+        "years": "2001 - 2011",
+        "description": "Bachiller en Ingeniería Estadística e Informática."
+      }
+    }
+  },
+  "skills": {
+    "managementTools": {
+      "title": "Herramientas y skills de gestión",
+      "scrum": "Scrum (incluye Jira)"
+    },
+    "preferredTools": {
+      "title": "Herramientas preferidas"
+    },
+    "preferredStack": {
+      "title": "Stack preferido",
+      "desc": "Cualquiera que tenga a Next.js como frontend o en full stack."
+    },
+    "others": {
+      "title": "Otros",
+      "cLang": "Lenguaje C",
+      "sql": "Lenguaje SQL"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "spanish": {
+        "title": "Español",
+        "level": "Nativo"
+      },
+      "english": {
+        "title": "Inglés",
+        "level": "Intermedio"
+      },
+      "portuguese": {
+        "title": "Portugués",
+        "level": "Intermedio"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio"
+  },
+  "hobbies": {
+    "music": {
+      "title": "Música",
+      "paragraph": "Me gusta tocar instrumentos de cuerda: bajo y guitarra, especialmente el primero."
+    },
+    "reading": {
+      "title": "Lectura",
+      "paragraph": "Leer la Biblia, algunos libros clásicos y filosofía."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingresa tu nombre"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Ingresa tu email"
+      },
+      "message": {
+        "label": "Mensaje"
+      },
+      "submit": "Enviar",
+      "okMessage": "Mensaje enviado exitosamente",
+      "errorMessage": "No se pudo enviar el mensaje"
+    },
+    "followMe": "Sígueme"
+  }
+}

@@ -1,0 +1,162 @@
+/*************** portfolio ***************/
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "effects";
+
+.portfolio {
+  margin: 1.5rem 1.7rem 1.5rem 1rem;
+  box-shadow: v.$box-shadow-light-mode;
+  border-radius: 1.2rem;
+  padding: 3.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include m.tablet {
+    margin: 1.5rem 5.6rem 1.5rem 5.2rem;
+  }
+  @include m.desktop {
+    margin: 1.5rem 5.6rem 1.5rem 5.2rem;
+    padding: 6rem 5rem;
+  }
+
+  .portfolio-title {
+    body.dark & {
+      /* dark mode */
+      /* color: v.$white; */
+      @extend .neon-letters; /* delete if not fine to the eye */
+    }
+    @include m.desktop {
+      font-size: 3.6rem;
+    }
+    @include m.desktopXL {
+      font-size: 4.8rem;
+    }
+  }
+
+  .projects {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .project {
+      /* each item */
+      border-radius: 1.2rem;
+      max-width: 28rem;
+      padding: 4.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: v.$box-shadow-light-mode;
+
+      @include m.desktop {
+        &:hover {
+          body.dark & {
+            box-shadow: 0px 0px 15px 5px rgba(0, 255, 170, 0.88);
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+
+      & > *:not(:first-child) {
+        /* not applied to the image */
+        margin-top: 1.5rem;
+      }
+
+      img {
+        border-radius: 1.2rem;
+        cursor: zoom-in;
+        max-height: 17rem;
+        object-fit: cover;
+      }
+
+      div.external-links {
+        display: flex;
+        justify-content: space-between;
+
+        .demo,
+        .repo {
+          border-radius: 1.2rem;
+          text-decoration: none;
+          padding: 1rem 1.2rem;
+          box-shadow: v.$box-shadow-light-mode;
+          font-family: v.$quicksand;
+        }
+
+        .demo {
+          background-color: blue;
+          color: v.$white;
+        }
+        .repo {
+          margin-left: 2rem;
+          background-color: v.$white;
+          color: blue;
+        }
+      }
+    }
+  }
+}
+
+/* classes for zoom in project's image after click */
+
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 2rem;
+
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  place-items: center;
+
+  background-color: rgb(0 0 0 / 0.5);
+  body.dark & {
+    background-color: rgb(0 0 0 / 0.7);
+  }
+
+  picture > * {
+    display: block;
+    max-width: 80rem;
+      object-fit: cover;
+      max-height: 35rem;
+    @include m.desktopXL {
+      max-height: 59rem;
+    }
+  }
+}
+
+/* close button */
+.close-button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: v.$white;
+  color: v.$black;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fade-in-project {
+  /* after zooming in the image */
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

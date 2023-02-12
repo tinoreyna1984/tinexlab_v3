@@ -1,0 +1,244 @@
+/*************** header ***************/
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "components/scroll-to-top";
+@use "components/splash";
+@use "effects";
+
+header {
+  margin: 1.5rem 1.7rem 1.5rem 1rem;
+  box-shadow: v.$box-shadow-light-mode;
+  border-radius: 1.2rem;
+  padding: 2rem 3rem;
+  @include m.tablet {
+    margin: 1.5rem 5.6rem 1.5rem 5.2rem;
+  }
+  @include m.desktopXXL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 5.6rem 1.5rem 5.2rem;
+  }
+
+  .left-section {
+    /* logo and navbar */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      /* link for TinexLab logo and title */
+      display: flex;
+      align-items: center;
+
+      img {
+        /* TinexLab logo */
+        border-radius: 1.2rem;
+        margin-right: 2rem;
+      }
+
+      .site-title {
+        /* TinexLab */
+        font-style: normal;
+        /* font-weight: bolder; */
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+        color: v.$black;
+        @include m.tablet {
+          font-size: 3.6rem;
+        }
+        @include m.desktop {
+          font-size: 5.4rem;
+        }
+
+        body.dark & {
+          /* dark mode */
+          /* color: v.$white; */
+          @extend .neon-letters; /* delete if not fine to the eye */
+        }
+      }
+    }
+
+    #menu {
+      /* menu button for mobile */
+      cursor: pointer;
+      font-size: 3rem;
+      @include m.desktop {
+        display: none;
+      }
+    }
+  }
+
+  .nav {
+    /* nav class */
+    opacity: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    @include m.desktop {
+      opacity: 1;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    a {
+      /* links */
+      visibility: hidden; /* only visible after menu is opened */
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: v.$black;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.6rem;
+
+      body.dark & {
+        /* dark mode */
+        color: v.$white;
+      }
+
+      &:first-child {
+        padding-top: 1.2rem;
+      }
+      &:last-child {
+        padding-bottom: 1.2rem;
+      }
+      @include m.desktop {
+        visibility: visible;
+        margin-bottom: 0;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+
+        &:not(:first-child) {
+          margin: 0 0 0 2rem;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+        &:hover:not(:last-child) {
+          text-shadow: 0px 4px 22px rgba(67, 55, 55, 0.43);
+          transition: all 0.3s ease-in-out;
+          body.dark & {
+            /* dark mode */
+            text-shadow: 0px 7px 8px rgb(255 255 255);
+          }
+        }
+      }
+    }
+
+    /* language selector */
+    .language-selector {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include m.desktop {
+        margin: 0 0 0 2rem;
+        margin-bottom: 0;
+      }
+      select#lang {
+        margin-left: 1rem;
+        appearance: none;
+        outline: none;
+        background-color: v.$white;
+        color: v.$black;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        border: none;
+        body.dark & {
+          /* dark mode */
+          background-color: v.$black;
+          color: v.$white;
+        }
+        @include m.desktop {
+          font-size: 2.4rem;
+          line-height: 3.6rem;
+        }
+      }
+    }
+
+    #dark-mode {
+      /* dark mode toggle switch */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include m.desktop {
+        margin-left: 3rem;
+      }
+      span {
+        color: v.$black;
+        body.dark & {
+          /* dark mode */
+          color: v.$white;
+        }
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        @include m.desktop {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 2.4rem;
+          line-height: 3.6rem;
+        }
+      }
+
+      .switch {
+        $width: 4rem;
+        $height: 2rem;
+
+        margin: 0 1rem;
+
+        .toggle-control {
+          transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+          width: $width;
+          height: $height;
+          display: block;
+          border: 2px solid #f1f1f1;
+          border-radius: $height;
+          background-color: rgba(black, 0.06);
+          position: relative;
+          &:after {
+            transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+            content: "";
+            width: $width/2;
+            height: $height;
+            display: block;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 1px 2px rgba(black, 0.4), 0 3px 2px rgba(black, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+
+        input {
+          display: none;
+          &:checked + .toggle-control {
+            border-color: #888888;
+            background-color: #888888;
+            &:after {
+              left: $width/2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .show-mobile {
+    /* show menu on mobile */
+    opacity: 1;
+    height: fit-content;
+    a {
+      visibility: visible; /* only visible after menu is opened */
+    }
+  }
+}
