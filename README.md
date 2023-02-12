@@ -39,4 +39,3 @@ This is my personal site. It's the result of most of my web development knowledg
 - Website [TinexLab](https://tinexlab.vercel.app)
 - GitHub [@tinoreyna1984](https://github.com/tinoreyna1984)
 - Twitter [@tinoreyna1984](https://twitter.com/tinoreyna1984)
-
