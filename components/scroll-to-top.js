@@ -1,4 +1,4 @@
-import { scrollToTop } from '../../helpers/scroll-to-top-event';
+import { scrollToTop } from '../helpers/scroll-to-top-event';
 import Link from 'next/link'
 import { useState, useEffect } from "react";
 

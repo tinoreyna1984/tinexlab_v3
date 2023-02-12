@@ -1,4 +1,4 @@
-import { useForm } from "../../hooks/useForm";
+import { useForm } from "../hooks/useForm";
 import { useTranslations } from "next-intl";
 import Swal from "sweetalert2";
 

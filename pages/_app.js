@@ -1,7 +1,7 @@
 import '../scss/app.scss'
 import { DarkModeContextProvider } from '../storage/context/dm-context'
 import Head from 'next/head'
-import Header from './layout/header'
+import Header from '../layout/header'
 import "@fortawesome/fontawesome-svg-core/styles.css"; /** Font Awesome */
 import { config } from "@fortawesome/fontawesome-svg-core"; /** Font Awesome */
 import { NextIntlProvider } from 'next-intl';

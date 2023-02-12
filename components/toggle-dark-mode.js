@@ -1,5 +1,5 @@
-import { toggleTheme } from "../../helpers/toggleTheme";
-import { useDarkModeContext, useSetDarkModeContext } from "../../storage/context/dm-context";
+import { toggleTheme } from "../helpers/toggleTheme";
+import { useDarkModeContext, useSetDarkModeContext } from "../storage/context/dm-context";
 
 export default function ToggleDarkMode() {
 
