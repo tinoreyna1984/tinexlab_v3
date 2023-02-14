@@ -4,8 +4,6 @@ Personal website and a solution for a challenge from [Devchallenges.io](http://d
 
 [Website](https://tinexlab.vercel.app)
 
-<!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -22,6 +20,7 @@ This is my personal site. It's the result of most of my web development knowledg
 
 - JSX + CSS + SASS
 - Next.js and a few Node.js libraries
+- Redux Toolkit
 
 ## Features
 
