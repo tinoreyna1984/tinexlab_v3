@@ -27,7 +27,7 @@ This is my personal site. It's the result of most of my web development knowledg
 
 - Mobile first
 - Dark mode with local storage feature
-- This application/site was also created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an own portfolio satisfying some stories in the description.
+- This application/site was also created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) was to build an own portfolio satisfying some stories in the description.
 
 ## Acknowledgements
 
