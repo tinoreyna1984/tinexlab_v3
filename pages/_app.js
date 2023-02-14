@@ -6,10 +6,12 @@ import "@fortawesome/fontawesome-svg-core/styles.css"; /** Font Awesome */
 import { config } from "@fortawesome/fontawesome-svg-core"; /** Font Awesome */
 import { NextIntlProvider } from 'next-intl';
 import { useEffect } from 'react';
+import { Provider } from "react-redux";
+import { store } from '../redux/store';
 config.autoAddCss = false; /** Font Awesome */
 
 export default function App({ Component, pageProps }) {
-  
+
   /* useEffect hook for splash screen animation */
   useEffect(() => {
     const body = document.querySelector("body");
@@ -20,7 +22,7 @@ export default function App({ Component, pageProps }) {
         setTimeout(() => {
           splash.classList.add('display-none');
           body.classList.remove('fixed-body');
-        },3000);
+        }, 3000);
       }
     }
   }, []);
@@ -31,12 +33,14 @@ export default function App({ Component, pageProps }) {
         <title>TinexLab</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <NextIntlProvider messages={pageProps.messages}>
-        <DarkModeContextProvider>
-          <Header />
-          <Component {...pageProps} />
-        </DarkModeContextProvider>
-      </NextIntlProvider>
+      <Provider store={store}>
+        <NextIntlProvider messages={pageProps.messages}>
+          <DarkModeContextProvider>
+            <Header />
+            <Component {...pageProps} />
+          </DarkModeContextProvider>
+        </NextIntlProvider>
+      </Provider>
     </>
   )
 }

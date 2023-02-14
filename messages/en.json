@@ -104,7 +104,9 @@
     }
   },
   "portfolio" : {
-    "title" : "Portfolio"
+    "title" : "Portfolio",
+    "filterByTag" : "Filter by tags: ",
+    "noProjectsFound": "No projects found."
   },
   "hobbies": {
     "music": {

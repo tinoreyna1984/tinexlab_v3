@@ -36,8 +36,54 @@
     }
   }
 
+  .tech-filter {
+    p,
+    .tag {
+      margin-top: 1rem;
+    }
+    p {
+      line-height: 2.2em;
+    }
+
+    .tag {
+      /* tag: a custom checkbox that filters projects associated with specific techs */
+      border-radius: 1rem;
+      box-shadow: v.$box-shadow-light-mode;
+      overflow: hidden;
+      float: left;
+      background-color: v.$white;
+      margin-right: 1rem;
+
+      label {
+        float: left;
+        line-height: 2.2em;
+        input[type=checkbox] {
+          display: none;
+          position: absolute;
+
+          /* effects on checked status */
+          & + span {
+            color: v.$black;
+            transition: all 0.3s ease-in-out;
+          }
+          &:checked + span {
+            background-color: blue;
+            color: v.$white;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        span {
+          text-align: center;
+          display: block;
+          color: v.$black;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
   .projects {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,8 +172,8 @@
   picture > * {
     display: block;
     max-width: 80rem;
-      object-fit: cover;
-      max-height: 35rem;
+    object-fit: cover;
+    max-height: 35rem;
     @include m.desktopXL {
       max-height: 59rem;
     }
