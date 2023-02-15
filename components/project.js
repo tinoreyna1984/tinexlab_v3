@@ -19,7 +19,7 @@ export default function Project({ project }) {
     
     return (
         <div className="project">
-            <img id="inicio" onClick={() => maximizeImage(imageUrl)} src={imageUrl} alt="project" />
+            <img id="inicio" onClick={() => maximizeImage(imageUrl)} src={imageUrl} alt="project" loading="lazy" />
             <h3>{project_title}</h3>
             <p>{description}</p>
             <div className="external-links">
