@@ -8,9 +8,9 @@ import Hobbies from "../layout/hobbies";
 import Portfolio from "../layout/portfolio";
 import Skills from "../layout/skills";
 import { initState } from "../redux/projectsSlice";
-import { Loader } from "./api/cosmic-load";
+import { Loader } from "./api/dummy-data";
 
-// internationalization
+// initial data and internationalization
 export async function getStaticProps({ locale }) {
   
   const { projects, tags } = await Loader();
@@ -26,6 +26,8 @@ export async function getStaticProps({ locale }) {
 
 export default function Home(props) {
   const {projects, tags} = props;
+  /* console.log(projects)
+  console.log(tags) */
 
   const dispatch = useDispatch();
 
