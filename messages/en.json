@@ -133,6 +133,9 @@
         "label": "Message"
       },
       "submit": "Submit",
+      "nameNotValidError": "Invalid name",
+      "emailNotValidError": "Invalid email",
+      "emptyMessageError": "Message cannot be empty",
       "okMessage" : "Message sent successfully",
       "errorMessage" : "Could not send message"
     },

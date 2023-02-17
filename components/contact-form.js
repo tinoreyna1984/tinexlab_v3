@@ -12,9 +12,41 @@ export default function ContactForm() {
 
   const t = useTranslations('contact');
 
-  /* TODO: develop the email submission from form */
-  const handleSubmit = async () => {
-    console.log({ name, email, message });
+  const validFields = (name, email, message) => {
+    /* let phoneRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g; */
+    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (name.length < 2) {
+      Swal.fire(
+        t("title"),
+        `${t("form.nameNotValidError")}`,
+        "error"
+      );
+      return false;
+    }
+    if (!emailRegex.test(email) || email.length === 0) {
+      Swal.fire(
+        t("title"),
+        `${t("form.emailNotValidError")}`,
+        "error"
+      );
+      return false;
+    }
+    if (!message.length) {
+      Swal.fire(
+        t("title"),
+        `${t("form.emptyMessageError")}`,
+        "error"
+      );
+      return false;
+    }
+    return true;
+  };
+
+  
+  const handleSubmit = async (name, email, message) => {
+
+    if(!validFields(name, email, message))
+      return;
 
     try {
       const res = await fetch(`/api/sendgrid`, {
@@ -62,7 +94,7 @@ export default function ContactForm() {
             id="nameField"
             value={name}
             onChange={handleInputChange}
-            placeholder={t('form.name.placeholder')} />
+            placeholder={t('form.name.placeholder')} autoComplete="off" />
         </div>
         <div className="campo">
           <label htmlFor="">{t('form.email.label')}: </label>
@@ -72,7 +104,7 @@ export default function ContactForm() {
             id="emailField"
             value={email}
             onChange={handleInputChange}
-            placeholder={t('form.email.placeholder')} />
+            placeholder={t('form.email.placeholder')} autoComplete="off" />
         </div>
         <div className="campo">
           <label htmlFor="">{t('form.message.label')}: </label>
@@ -86,7 +118,7 @@ export default function ContactForm() {
         </div>
       </div>
       <div className="button-group">
-        <button type="button" onClick={handleSubmit} className="boton">{t('form.submit')}</button>
+        <button type="button" onClick={() => handleSubmit(name, email, message)} className="boton">{t('form.submit')}</button>
       </div>
     </form>
   );
