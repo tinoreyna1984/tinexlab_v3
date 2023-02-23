@@ -166,10 +166,12 @@ header {
 
     #dark-mode {
       /* dark mode toggle switch */
+      visibility: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
       @include m.desktop {
+        visibility: visible;
         margin-left: 3rem;
       }
       span {
@@ -237,7 +239,7 @@ header {
     /* show menu on mobile */
     opacity: 1;
     height: fit-content;
-    a {
+    a, #dark-mode {
       visibility: visible; /* only visible after menu is opened */
     }
   }
