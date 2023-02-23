@@ -6,11 +6,11 @@ const tags = [
     {
         slug: "auth0",
         title: "auth0"
-    },
+    },/* 
     {
         slug: "cosmicjs",
         title: "CosmicJS"
-    },
+    }, */
     {
         slug: "nextjs",
         title: "Next.js"
@@ -314,7 +314,6 @@ const projects = [
         ],
         tagTitle: [
             "Bootstrap",
-            "CosmicJS",
             "Redux Toolkit",
             "Next.js",
             "React",
@@ -323,8 +322,8 @@ const projects = [
             "HTML"
         ],
         title_en: "Kiuti Cases",
-        content: "Catálogo de ventas de estuches para iPhone. Usa Cosmic CMS como backend.",
-        content_en: "Sales catalog of cases for iPhone. Use Cosmic CMS as backend.",
+        content: "Catálogo de ventas de estuches para iPhone.",
+        content_en: "Sales catalog of cases for iPhone.",
         repo: "https://github.com/tinoreyna1984/kiuti-catalogo-next-js",
         site: "https://kiuti-catalogo.vercel.app/",
         year: "2022",
@@ -343,7 +342,6 @@ const projects = [
         tagTitle: [
             "React Native",
             "Redux Toolkit",
-            "CosmicJS",
             "React",
             "JavaScript"
         ],
