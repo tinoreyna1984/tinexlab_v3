@@ -14,14 +14,14 @@ export default function ToggleDarkMode() {
 
     return (
         <>
-            <a id="dark-mode"> {/* Toggle dark mode */}
+            <div id="dark-mode"> {/* Toggle dark mode */}
                 <span className="material-symbols-outlined"> light_mode </span>
                 <label className="switch">
                     <input id="dark-mode-switch" type="checkbox" onClick={handleDarkMode} />
                     <span className="toggle-control"></span>
                 </label>
                 <span className="material-symbols-outlined"> dark_mode </span>
-            </a>
+            </div>
         </>
     );
 }
