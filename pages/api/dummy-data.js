@@ -67,6 +67,29 @@ const tags = [
 
 const projects = [
     {
+        title: "Tino Tasker",
+        slug: "tino-tasker",
+        tagSlugs: [
+            "react",
+            "redux-toolkit",
+            "javascript",
+            "sass"
+        ],
+        tagTitle: [
+            "React",
+            "Redux Toolkit",
+            "JavaScript",
+            "SASS"
+        ],
+        title_en: "Tino Tasker",
+        content: "Aplicación de gestor de tareas en forma de PWA.",
+        content_en: "PWA app for task management.",
+        repo: "https://github.com/tinoreyna1984/tino-tasker",
+        site: "https://tino-tasker.vercel.app/",
+        year: "2023",
+        imageUrl: "./portfolio/tino-tasker-desktopXL.png"
+    },
+    {
         title: "Landing page",
         slug: "landing-page",
         tagSlugs: [
