@@ -62,10 +62,37 @@ const tags = [
     {
         slug: "html",
         title: "HTML"
+    },
+    {
+        slug: "tailwind",
+        title: "Tailwind"
     }
 ];
 
 const projects = [
+    {
+        title: "Generador aleatorio de frases",
+        slug: "random-quote-generator",
+        tagSlugs: [
+            "nextjs",
+            "redux-toolkit",
+            "javascript",
+            "tailwind"
+        ],
+        tagTitle: [
+            "Next.js",
+            "Redux Toolkit",
+            "JavaScript",
+            "Tailwind"
+        ],
+        title_en: "Random quote generator",
+        content: "Generador aleatorio de frases.",
+        content_en: "Random quote generator.",
+        repo: "https://github.com/tinoreyna1984/quote-generator",
+        site: "https://quote-generator-tinoreyna1984.vercel.app/",
+        year: "2023",
+        imageUrl: "./portfolio/random-quote-generator-tablet.png"
+    },
     {
         title: "Tino Tasker",
         slug: "tino-tasker",
