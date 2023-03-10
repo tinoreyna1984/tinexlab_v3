@@ -5,14 +5,15 @@ export default function ToggleDarkMode() {
 
     const themeApi = useTheme()
     const { theme, setTheme } = themeApi;
-    console.log(themeApi)
-
+    
     useEffect(() => { /* <========= if you set the theme as dark, the value should be checked */
+        setTheme(theme);
+        if(theme === "dark") document.body.classList.add("dark");
+        else document.body.classList.remove("dark");
         let darkModeToggle = document.querySelector('#dark-mode-switch');
         darkModeToggle.checked = ((theme === "dark") ? true : false);
     }, [])
 
-    
     /* handles dark mode toggle */
     const handleDarkMode = () => {
         setTheme(theme === "dark" ? 'light' : 'dark') // changes storage variable value
