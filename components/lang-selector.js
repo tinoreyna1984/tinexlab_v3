@@ -14,6 +14,8 @@ export default function LanguageSelector() {
             en.selected = true;
         }
         router.push(router.pathname, router.asPath, {locale: router.locale})
+            .then(console.log("locale: ", router.locale))
+            .catch(e => console.log("Error: ", e.message))
     }, [])
 
     const changeLanguage = (e) => {

@@ -1,5 +1,5 @@
 import { useLocalStorage } from "./useLocalStorage";
 
 export function useTheme() {
-    return useLocalStorage('theme', 'light');
+    return useLocalStorage('local-theme', 'light');
 }

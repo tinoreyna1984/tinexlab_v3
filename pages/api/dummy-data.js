@@ -71,6 +71,27 @@ const tags = [
 
 const projects = [
     {
+        title: "Demo de sitio con modo oscuro",
+        slug: "tino-dark-mode",
+        tagSlugs: [
+            "nextjs",
+            "javascript",
+            "tailwind"
+        ],
+        tagTitle: [
+            "Next.js",
+            "JavaScript",
+            "Tailwind"
+        ],
+        title_en: "Dark mode website demo",
+        content: "Sitio de prueba para la funcionalidad de modo oscuro.",
+        content_en: "Dummy website for the dark mode feature.",
+        repo: "https://github.com/tinoreyna1984/tino-dark-mode",
+        site: "https://tino-dark-mode.vercel.app/",
+        year: "2023",
+        imageUrl: "./portfolio/tino-dark-mode-desktopXL.png"
+    },
+    {
         title: "Generador aleatorio de frases",
         slug: "random-quote-generator",
         tagSlugs: [
@@ -402,9 +423,60 @@ const projects = [
         site: "https://snack.expo.dev/@tinoreyna1984/67e236?platform=ios",
         year: "2022",
         imageUrl: "./portfolio/kiuti-cases-ios.png"
-    }
+    },
+    {
+        title: "Academia Capone Demo",
+        slug: "capone-academy-demo",
+        tagSlugs: [
+            "wordpress"
+        ],
+        tagTitle: [
+            "WordPress"
+        ],
+        title_en: "Capone Academy Demo",
+        content: "Sitio de una academia de deportes de contacto hecha con WordPress.",
+        content_en: "A website for a combat sports made with WordPress.",
+        repo: "#",
+        site: "http://capone-demo.infinityfreeapp.com/",
+        year: "2019",
+        imageUrl: "./portfolio/capone-demo-desktop.png"
+    },
+    {
+        title: "Academia Constrictor Demo",
+        slug: "constrictor-academy-demo",
+        tagSlugs: [
+            "wordpress"
+        ],
+        tagTitle: [
+            "WordPress"
+        ],
+        title_en: "Constrictor Academy Demo",
+        content: "Sitio de una academia de deportes de contacto hecha con WordPress.",
+        content_en: "A website for a combat sports made with WordPress.",
+        repo: "#",
+        site: "http://constrictor-demo.infinityfreeapp.com/",
+        year: "2019",
+        imageUrl: "./portfolio/constrictor-demo-mobile.png"
+    },
+    {
+        title: "L&C Demo",
+        slug: "l-c-academy-demo",
+        tagSlugs: [
+            "wordpress"
+        ],
+        tagTitle: [
+            "WordPress"
+        ],
+        title_en: "L&C Demo",
+        content: "Sitio de una empresa agroindustrial hecha con WordPress.",
+        content_en: "A website for an agroindustrial enterprise made with WordPress.",
+        repo: "#",
+        site: "http://lycdemo.infinityfreeapp.com/",
+        year: "2020",
+        imageUrl: "./portfolio/lycdemo-desktopXL.png"
+    },
 ]
 
 export const Loader = async () => {
-    return {projects, tags};
+    return { projects, tags };
 }
