@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 import LanguageSelector from "./lang-selector";
 import ToggleDarkMode from "./toggle-dark-mode";
 
@@ -10,14 +9,6 @@ export default function Navigation() {
     const t = useTranslations('nav');
 
     /* Menu with navlinks and a dark mode toggle button */
-
-    // checks dark mode status on every refresh
-    useEffect(() => {
-        const stored = JSON.parse(localStorage.getItem("theme")) || "light";
-        document.querySelector("#dark-mode-switch").checked = (stored === "light") ? false : true;
-        if (stored === "light") document.body.classList.remove("dark");
-        else document.body.classList.add("dark");
-    }, []);
 
     const router = useRouter();
 

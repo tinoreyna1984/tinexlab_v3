@@ -1,14 +1,21 @@
-import { toggleTheme } from "../helpers/toggleTheme";
-import { useDarkModeContext, useSetDarkModeContext } from "../storage/context/dm-context";
+import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 export default function ToggleDarkMode() {
 
-    const darkMode = useDarkModeContext();
-    const setStoredMode = useSetDarkModeContext();
+    const themeApi = useTheme()
+    const { theme, setTheme } = themeApi;
+    console.log(themeApi)
 
+    useEffect(() => { /* <========= if you set the theme as dark, the value should be checked */
+        let darkModeToggle = document.querySelector('#dark-mode-switch');
+        darkModeToggle.checked = ((theme === "dark") ? true : false);
+    }, [])
+
+    
     /* handles dark mode toggle */
     const handleDarkMode = () => {
-        setStoredMode(toggleTheme(darkMode)); // changes storage variable value
+        setTheme(theme === "dark" ? 'light' : 'dark') // changes storage variable value
         document.body.classList.toggle("dark"); // adds/removes "dark" class
     }
 

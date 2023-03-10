@@ -1,5 +1,5 @@
 import '../scss/app.scss'
-import { DarkModeContextProvider } from '../storage/context/dm-context'
+import { ThemeProvider } from "next-themes"
 import Head from 'next/head'
 import Header from '../layout/header'
 import "@fortawesome/fontawesome-svg-core/styles.css"; /** Font Awesome */
@@ -35,10 +35,10 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Provider store={store}>
         <NextIntlProvider messages={pageProps.messages}>
-          <DarkModeContextProvider>
+          <ThemeProvider enableSystem={false} attribute="class">
             <Header />
             <Component {...pageProps} />
-          </DarkModeContextProvider>
+          </ThemeProvider>
         </NextIntlProvider>
       </Provider>
     </>
