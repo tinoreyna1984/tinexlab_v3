@@ -370,7 +370,7 @@ const projects = [
         year: "2022",
         imageUrl: "./portfolio/webserver-desktopXL.png"
     },
-    {
+    /* {
         title: "Kiuti Cases",
         slug: "kiuti-cases",
         tagSlugs: [
@@ -399,7 +399,7 @@ const projects = [
         site: "https://kiuti-catalogo.vercel.app/",
         year: "2022",
         imageUrl: "./portfolio/kiuti-cases-tablet.png"
-    },
+    }, */
     {
         title: "Kiuti Cases (iOS)",
         slug: "kiuti-cases-ios",
