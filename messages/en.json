@@ -10,6 +10,13 @@
     "resume" : "Born on 05/05/1984, in Lima, Peru. Peruvian resident in Guayaquil.",
     "experience" : {
       "title" : "Work experience and education",
+      "experience06": {
+        "company": "Viamática",
+        "role": "React + Laravel web developer",
+        "city": "Guayaquil, Ecuador (local office)",
+        "years": "2023 - current",
+        "description": "Web development for Ambiensa."
+      },
       "experience05" : {
         "company" : "Quantify 360 Solutions",
         "role" : "Fullstack Web Developer",

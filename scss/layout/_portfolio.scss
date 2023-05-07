@@ -124,7 +124,7 @@
         display: flex;
         justify-content: space-between;
 
-        .demo,
+        .site,
         .repo {
           border-radius: 1.2rem;
           text-decoration: none;
@@ -133,7 +133,7 @@
           font-family: v.$quicksand;
         }
 
-        .demo {
+        .site {
           background-color: blue;
           color: v.$white;
         }

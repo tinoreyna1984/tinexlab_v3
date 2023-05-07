@@ -23,7 +23,7 @@ export default function Project({ project }) {
             <h3>{project_title}</h3>
             <p>{description}</p>
             <div className="external-links">
-                {(site !== "#") && <a className="demo" href={site} target="_blank">Demo</a>}
+                {(site !== "#") && <a className="site" href={site} target="_blank">Site</a>}
                 {(repo !== "#") && <a className="repo" href={repo} target="_blank">Repo</a>}
             </div>
             <p>Tags: {tagTitle.join(", ")}</p>

@@ -71,6 +71,27 @@ const tags = [
 
 const projects = [
     {
+        title: "Iglesia Gracia Eterna",
+        slug: "iglesia-gracia-eterna",
+        tagSlugs: [
+            "nextjs",
+            "javascript",
+            "tailwind"
+        ],
+        tagTitle: [
+            "Next.js",
+            "JavaScript",
+            "Tailwind"
+        ],
+        title_en: "Iglesia Gracia Eterna (Eternal Grace Presbyterian Church)",
+        content: "Sitio web institucional de la Iglesia Gracia Eterna.",
+        content_en: "Eternal Grace Presbyterian Church website.",
+        repo: "https://github.com/tinoreyna1984/demo-gracia-eterna",
+        site: "https://iglesiagraciaeterna.org/",
+        year: "2023",
+        imageUrl: "./portfolio/iglesia-gracia-eterna-desktop.png"
+    },
+    {
         title: "Demo de sitio con modo oscuro",
         slug: "tino-dark-mode",
         tagSlugs: [
@@ -297,7 +318,7 @@ const projects = [
         year: "2022",
         imageUrl: "./portfolio/calcu-tr-mobile.png"
     },
-    {
+    /* {
         title: "Molde para rutas protegidas",
         slug: "molde-para-rutas-protegidas",
         tagSlugs: [
@@ -344,7 +365,7 @@ const projects = [
         site: "https://book-search-tino.vercel.app/",
         year: "2022",
         imageUrl: "./portfolio/it-book-store-desktopXL.png"
-    },
+    }, */
     {
         title: "Node.js webserver con páginas estáticas",
         slug: "nodejs-webserver-con-paginas-estaticas",

@@ -24,6 +24,8 @@ export default function Skills() {
                     <SkillBar skill="Node.js" percentage="60%" skillId="nodejs-bar" />
                     <SkillBar skill="Express" percentage="60%" skillId="express-bar" />
                     <SkillBar skill="MongoDB" percentage="30%" skillId="mongodb-bar" />
+                    <SkillBar skill="PHP" percentage="70%" skillId="php-bar" />
+                    <SkillBar skill="Laravel" percentage="65%" skillId="laravel-bar" />
                 </div>
                 <div className="management-tools">
                     <h3>{t("managementTools.title")}</h3>
