@@ -1,5 +1,17 @@
 const tags = [
     {
+        slug: "angular",
+        title: "Angular"
+    },
+    {
+        slug: "java",
+        title: "Java"
+    },
+    {
+        slug: "spring-boot",
+        title: "Spring Boot"
+    },
+    {
         slug: "wordpress",
         title: "WordPress"
     },
@@ -70,6 +82,52 @@ const tags = [
 ];
 
 const projects = [
+    {
+        title: "TinoCRM",
+        slug: "tinocrm",
+        tagSlugs: [
+            "angular",
+            "java",
+            "spring-boot",
+            "bootstrap"
+        ],
+        tagTitle: [
+            "Angular",
+            "Java",
+            "Spring Boot",
+            "Bootstrap"
+        ],
+        title_en: "Proyecto personal de un CRM para el aprendizaje de Spring Boot + Angular.",
+        content: "Personal project of a CRM for improvement in Spring Boot + Angular.",
+        content_en: "Academy simulation.",
+        repo: "https://github.com/tinoreyna1984/tinocrm-frontend",
+        site: "#",
+        year: "2023",
+        imageUrl: "./portfolio/tinocrm-desktop.png"
+    },
+    {
+        title: "Academia Spring Boot + Angular",
+        slug: "academia-springboot-angular",
+        tagSlugs: [
+            "angular",
+            "java",
+            "spring-boot",
+            "bootstrap"
+        ],
+        tagTitle: [
+            "Angular",
+            "Java",
+            "Spring Boot",
+            "Bootstrap"
+        ],
+        title_en: "Spring Boot + Angular Academy",
+        content: "Simulación de una academia.",
+        content_en: "Academy simulation.",
+        repo: "https://github.com/tinoreyna1984/academia-front",
+        site: "#",
+        year: "2023",
+        imageUrl: "./portfolio/academia-desktop.png"
+    },
     {
         title: "Iglesia Gracia Eterna",
         slug: "iglesia-gracia-eterna",

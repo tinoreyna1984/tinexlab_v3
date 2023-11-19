@@ -4,26 +4,12 @@
     "contact": "Contacto"
   },
   "bio": {
-    "aboutMe": "Ingeniero Estadístico e Informático con más de 12 años de experiencia en el desarrollo de software, creando y aportando soluciones para grandes empresas, buscando siempre la excelencia y el trabajo en equipo. Actualmente estoy dedicado al desarrollo web (JavaScript, React, Next.js, Node.js), mayormente front-end."
+    "aboutMe": "Ingeniero Estadístico e Informático con más de 11 años de experiencia en el desarrollo de software, creando y aportando soluciones para grandes empresas, buscando siempre la excelencia y el trabajo en equipo. Actualmente estoy dedicado al desarrollo web (JavaScript, React, Next.js, Node.js), mayormente front-end."
   },
   "cv": {
-    "resume": "Nacido el 05/05/1984, en Lima, Perú. Peruano residente en Guayaquil.",
+    "resume": "Nacido el 05/05/1984, en Lima, Perú.",
     "experience": {
       "title": "Experiencia laboral y educación",
-      "experience06": {
-        "company": "Viamática",
-        "role": "Desarrollador web React + Laravel",
-        "city": "Guayaquil, Ecuador (presencial)",
-        "years": "2023",
-        "description": "Desarrollo web para Ambiensa."
-      },
-      "experience05": {
-        "company": "Quantify 360 Solutions",
-        "role": "Fullstack Web Developer",
-        "city": "Guayaquil, Ecuador (en remoto)",
-        "years": "2022",
-        "description": "Rediseño del sitio de Quantify 360 Solutions."
-      },
       "experience04": {
         "company": "Ayesa Perú",
         "role": "Consultor",
@@ -87,7 +73,7 @@
     },
     "preferredStack": {
       "title": "Stack preferido",
-      "desc": "Cualquiera que tenga a Next.js como frontend o en full stack."
+      "desc": "Angular/React + Spring Boot."
     },
     "others": {
       "title": "Otros",

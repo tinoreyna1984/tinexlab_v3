@@ -4,26 +4,12 @@
     "contact": "Contact"
   },
   "bio": {
-    "aboutMe": "Statistical and Computer Engineer with more than 12 years of experience in software development, creating and providing solutions for large companies, always seeking excellence and teamwork. Currently, I am dedicated to web development (JavaScript, React, Next.js, Node.js), mostly front-end."
+    "aboutMe": "Statistical and Computer Engineer with more than 11 years of experience in software development, creating and providing solutions for large companies, always seeking excellence and teamwork. Currently, I am dedicated to web development (JavaScript, React, Next.js, Node.js), mostly front-end."
   },
   "cv" : {
-    "resume" : "Born on 05/05/1984, in Lima, Peru. Peruvian resident in Guayaquil.",
+    "resume" : "Born on 05/05/1984, in Lima, Peru.",
     "experience" : {
       "title" : "Work experience and education",
-      "experience06": {
-        "company": "Viamática",
-        "role": "React + Laravel web developer",
-        "city": "Guayaquil, Ecuador (local office)",
-        "years": "2023",
-        "description": "Web development for Ambiensa."
-      },
-      "experience05" : {
-        "company" : "Quantify 360 Solutions",
-        "role" : "Fullstack Web Developer",
-        "city" : "Guayaquil, Ecuador (remote)",
-        "years" : "2022",
-        "description" : "Redesign of the Quantify 360 Solutions site."
-      },
       "experience04" : {
         "company" : "Ayesa Perú",
         "role" : "Consultant",
@@ -87,7 +73,7 @@
     },
     "preferredStack" : {
       "title" : "Preferred stack",
-      "desc" : "Any stack that has Next.js as frontend or full stack."
+      "desc" : "Angular + Spring Boot"
     },
     "others" : {
       "title" : "Others",
