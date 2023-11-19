@@ -97,9 +97,9 @@ const projects = [
             "Spring Boot",
             "Bootstrap"
         ],
-        title_en: "Proyecto personal de un CRM para el aprendizaje de Spring Boot + Angular.",
-        content: "Personal project of a CRM for improvement in Spring Boot + Angular.",
-        content_en: "Academy simulation.",
+        title_en: "TinoCRM",
+        content: "Proyecto personal de un CRM para el aprendizaje de Spring Boot + Angular.",
+        content_en: "Personal project of a CRM for improvement in Spring Boot + Angular.",
         repo: "https://github.com/tinoreyna1984/tinocrm-frontend",
         site: "#",
         year: "2023",
