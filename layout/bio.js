@@ -20,7 +20,7 @@ export default function Bio() {
             </div>
             <div className="contact-info">
                 <p><span className="material-symbols-outlined"> mail </span>: tinoreyna1984@gmail.com</p>
-                <p><span className="material-symbols-outlined"> call </span>: +593 986440040</p>
+                <p><span className="material-symbols-outlined"> call </span>: +51 960992996</p>
             </div>
             <p className="about-me">{t("aboutMe")}</p>
         </section>
