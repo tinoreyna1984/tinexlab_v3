@@ -17,6 +17,20 @@ export default function Cv() {
                         <div className="timeline-icon">
                             <span className="material-symbols-outlined">work</span>
                         </div>
+                        <div className="timeline-content right">
+                            <h2>{t("experience.experience06.company")}</h2>
+                            <h3>{t("experience.experience06.role")}</h3>
+                            <h4>{t("experience.experience06.city")}</h4>
+                            <h4>{t("experience.experience06.years")}</h4>
+                            <p>
+                                {t("experience.experience06.description")}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="timeline-item">
+                        <div className="timeline-icon">
+                            <span className="material-symbols-outlined">work</span>
+                        </div>
                         <div className="timeline-content">
                             <h2>{t("experience.experience05.company")}</h2>
                             <h3>{t("experience.experience05.role")}</h3>

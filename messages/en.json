@@ -10,6 +10,13 @@
     "resume" : "Born on 05/05/1984, in Lima, Peru.",
     "experience" : {
       "title" : "Work experience and education",
+      "experience06": {
+        "company": "Valtx Perú",
+        "role": "Java Programmer-Analyst",
+        "city": "Lima, Perú",
+        "years": "2024 - current",
+        "description": "Software development and support for Scotiabank Telebanking."
+      },
       "experience05": {
         "company": "Freelance",
         "role": "Freelance developer",
