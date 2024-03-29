@@ -4,7 +4,7 @@
     "contact": "Contacto"
   },
   "bio": {
-    "aboutMe": "Ingeniero Estadístico e Informático con más de 13 años de experiencia en el desarrollo de software, creando y aportando soluciones para grandes empresas, buscando siempre la excelencia y el trabajo en equipo. Actualmente estoy dedicado al desarrollo web (Java, Spring Boot, Angular)."
+    "aboutMe": "Ingeniero Estadístico e Informático experto en el desarrollo de software desde 2010, creando y aportando soluciones para grandes empresas, buscando siempre la excelencia y el trabajo en equipo. Actualmente estoy dedicado al desarrollo web (Java, Spring Boot, Angular)."
   },
   "cv": {
     "resume": "Nacido el 05/05/1984, en Lima, Perú.",
@@ -80,10 +80,13 @@
   "skills": {
     "managementTools": {
       "title": "Herramientas y skills de gestión",
-      "scrum": "Scrum (incluye Jira)"
+      "scrum": "Metodologías ágiles"
     },
     "preferredTools": {
       "title": "Herramientas preferidas"
+    },
+    "backend" : {
+      "microservices" : "Microservicios"
     },
     "preferredStack": {
       "title": "Stack preferido",

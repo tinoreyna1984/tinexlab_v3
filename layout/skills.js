@@ -11,25 +11,33 @@ export default function Skills() {
             <div className="skill-group">
                 <div className="frontend">
                     <h3>Frontend</h3>
-                    <SkillBar skill="HTML + CSS" percentage="90%" skillId="html-css-bar" />
-                    <SkillBar skill="SASS" percentage="70%" skillId="scss-bar" />
-                    <SkillBar skill="React (16+) + Redux Toolkit + Next.js" percentage="90%" skillId="react-bar" />
-                    <SkillBar skill="JavaScript (ES6+) + TypeScript" percentage="85%" skillId="js-bar" />
-                    <SkillBar skill="Bootstrap (5+) + TailwindCSS" percentage="80%" skillId="frontend-frameworks-bar" />
-                    <SkillBar skill="Angular" percentage="85%" skillId="angular-bar" />
+                    <ul>
+                        <li>HTML + CSS</li>
+                        <li>SASS</li>
+                        <li>JavaScript (ES6+) + TypeScript</li>
+                        <li>Bootstrap (5+) + TailwindCSS</li>
+                        <li>React (16+) + Redux Toolkit + Next.js</li>
+                        <li>Angular (15+)</li>
+                    </ul>
                 </div>
                 <div className="backend">
                     <h3>Backend</h3>
-                    <SkillBar skill="Java (17+)" percentage="85%" skillId="java-bar" />
-                    <SkillBar skill="Spring Boot (+ Security + Data JPA)" percentage="85%" skillId="springboot-bar" />
-                    <SkillBar skill="Node.js + Express" percentage="75%" skillId="nodejs-bar" />
-                    <SkillBar skill="PHP + Laravel" percentage="70%" skillId="laravel-bar" />
-                    <SkillBar skill="Docker" percentage="30%" skillId="docker-bar" />
+                    <ul>
+                        <li>Java (17+)</li>
+                        <li>Spring Boot (+ Security + Data JPA)</li>
+                        <li>Node.js + Express</li>
+                        <li>PHP + Laravel</li>
+                        <li>Docker</li>
+                        <li>{t("backend.microservices")}</li>
+                    </ul>
                 </div>
                 <div className="management-tools">
                     <h3>{t("managementTools.title")}</h3>
-                    <SkillBar skill="Git" percentage="60%" skillId="git-bar" />
-                    <SkillBar skill={t("managementTools.scrum")} percentage="50%" skillId="scrum-bar" />
+                    <ul>
+                        <li>Git</li>
+                        <li>Atlassian (Jira + Bitbucket + Confluence)</li>
+                        <li>{t("managementTools.scrum")}</li>
+                    </ul>
                 </div>
                 <div className="work-tools">
                     <h3>{t("preferredTools.title")}</h3>
@@ -48,10 +56,12 @@ export default function Skills() {
                 </div>
                 <div className="others">
                     <h3>{t("others.title")}</h3>
-                    <SkillBar skill="Linux/WSL" percentage="90%" skillId="linux-bar" />
-                    <SkillBar skill="WordPress" percentage="90%" skillId="wp-bar" />
-                    <SkillBar skill={t("others.cLang")} percentage="85%" skillId="c-bar" />
-                    <SkillBar skill={t("others.sql")} percentage="85%" skillId="sql-bar" />
+                    <ul>
+                        <li>Linux/WSL</li>
+                        <li>WordPress</li>
+                        <li>{t("others.cLang")}</li>
+                        <li>{t("others.sql")}</li>
+                    </ul>
                 </div>
                 <div className="languages">
                     <h3>{t("languages.title")}</h3>

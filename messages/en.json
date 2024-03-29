@@ -4,7 +4,7 @@
     "contact": "Contact"
   },
   "bio": {
-    "aboutMe": "Statistical and Computer Engineer with more than 13 years of experience in software development, creating and providing solutions for large companies, always seeking excellence and teamwork. Currently, I work in web development (Java, Spring Boot, Angular)."
+    "aboutMe": "Statistical and Computer Engineer with experience in software development since 2010, creating and providing solutions for large companies, always seeking excellence and teamwork. Currently, I work in web development (Java, Spring Boot, Angular)."
   },
   "cv" : {
     "resume" : "Born on 05/05/1984, in Lima, Peru.",
@@ -80,10 +80,13 @@
   "skills" : {
     "managementTools" : {
       "title" : "Management tools and skills",
-      "scrum" : "Scrum (includes Jira)"
+      "scrum" : "Agile"
     },
     "preferredTools" : {
       "title" : "Preferred tools"
+    },
+    "backend" : {
+      "microservices" : "Microservices"
     },
     "preferredStack" : {
       "title" : "Preferred stack",

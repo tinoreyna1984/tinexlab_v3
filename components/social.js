@@ -1,4 +1,4 @@
-import { faFacebookF, faGithub, faInstagram, faLinkedinIn, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faGithub, faInstagram, faLinkedinIn, faWhatsapp, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
@@ -18,7 +18,7 @@ export default function Social() {
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
                     <a href="https://twitter.com/tinoreyna1984" target="_blank">
-                        <FontAwesomeIcon icon={faTwitter} size="2x" />
+                        <FontAwesomeIcon icon={faXTwitter} size="2x" />
                     </a>
                     <a href="https://www.facebook.com/tinoreyna1984" target="_blank">
                         <FontAwesomeIcon icon={faFacebookF} size="2x" />
