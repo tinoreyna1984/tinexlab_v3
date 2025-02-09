@@ -43,7 +43,7 @@
         "role" : "Programmer",
         "city" : "Lima, Peru (local office)",
         "years" : "2012 - 2015",
-        "description" : "Development of EFT systems (C, Oracle PL/SQL). Featured: Banca Móvil BBVA-Telefónica (2014)."
+        "description" : "Development of EFT systems (C, Oracle PL/SQL). Featured: Banca Móvil BBVA-Telefónica (2013)."
       },
       "experience01" : {
         "company" : "ICQ Creative SAC",
@@ -126,6 +126,10 @@
     "reading": {
       "title": "Reading",
       "paragraph": "Read the Bible, some classic books and philosophy."
+    },
+    "sports": {
+      "title": "Combat sports",
+      "paragraph": "Train combat sports."
     }
   },
   "contact": {

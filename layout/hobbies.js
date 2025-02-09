@@ -28,6 +28,16 @@ export default function Hobbies() {
                     <h3>{t('reading.title')}</h3>
                     <p>{t('reading.paragraph')}</p>
                 </div>
+                <div className="hobby">
+                    {/* <img src="/assets/reading.jpg" /> */}
+                    <picture>
+                        <source srcSet="./avif/mma-img.avif" type="image/avif" />
+                        <source srcSet="./webp/mma-img.webp" type="image/webp" />
+                        <img src="./minified/mma-img.png" alt="Inicio" loading="lazy" />
+                    </picture>
+                    <h3>{t('sports.title')}</h3>
+                    <p>{t('sports.paragraph')}</p>
+                </div>
             </div>
         </section>
     );
