@@ -10,11 +10,18 @@
     "resume" : "Born on 05/05/1984, in Lima, Peru.",
     "experience" : {
       "title" : "Work experience and education",
+      "experience07": {
+        "company": "Scotiabank Perú",
+        "role": "IT Expert",
+        "city": "Lima, Perú",
+        "years": "2025 - current",
+        "description": "Full management on Scotiabank Telebanking."
+      },
       "experience06": {
         "company": "Valtx Perú",
         "role": "Java Programmer-Analyst",
         "city": "Lima, Perú",
-        "years": "2024 - current",
+        "years": "2024 - 2025",
         "description": "Outsourcing for Scotiabank Telebanking. I implemented the dynamic CVV to secure online purchases with debit card from Telebanking users."
       },
       "experience05": {
